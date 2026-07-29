@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio 4</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.frro.utn.edu.ar/" target="_blank">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg"
+                    alt="Imagen con un enlace al sitio web de la Universidad Tecnológica Nacional"
+                    width="90"
+                    height="80"
+                />
+            </a>
+        </header>
+        <hr style="border: 2px solid black" />
+        <main>
+            <h2>AÑO 2008</h2>
+
+            <table border="1" width="50%" style="border-collapse: collapse; border: 1px solid black">
+                <thead>
+                    <tr>
+                        <th colspan="2">Exámenes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" align="start">Fecha:..............</td>
+                        <td align="end">Aprobados</td>
+                    </tr>
+                    <tr>
+                        <td align="end">24/30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ol>
+                <a href="#"><li>Enunciado del examen</li> </a>
+                <a href="#" target="_blank"><li>Resolución</li> </a>
+            </ol>
+
+            <p>Puede realizar consultas complentando el siguiente formulaio:</p>
+            <br />
+
+            <form action="mailto:x@x.com" method="post" enctype="text/plain" style="width: fit-content">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required />
+                <br /><br />
+
+                <label for="consulta">consulta:</label>
+                <textarea id="consulta" name="consulta" rows="4" required style="resize: none"></textarea>
+                <br /><br />
+
+                <div style="display: flex; justify-content: right; gap: 10px; align-items: center">
+                    <input
+                        type="submit"
+                        value="Enviar"
+                        style="
+                            width: 100px;
+                            height: 40px;
+                            text-transform: uppercase;
+                            background-color: transparent;
+                            border: 2px solid black;
+                            cursor: pointer;
+                            font-size: 1rem;
+                            font-weight: 600;
+                        "
+                    />
+                    <input
+                        type="reset"
+                        value="Borrar"
+                        style="
+                            width: 100px;
+                            height: 40px;
+                            text-transform: uppercase;
+                            background-color: transparent;
+                            border: 2px solid black;
+                            cursor: pointer;
+                            font-size: 1rem;
+                            font-weight: 600;
+                        "
+                    />
+                </div>
+            </form>
+
+            <br><br>
+            <h3>Enunciado del examen</h3>
+            <p>Ejercicio 1: ...........................................<br>...............................................................</p>
+            <p>Ejercicio 2: ...........................................<br>...............................................................</p>
+
+            <br>
+
+            <p>Para mas informacion dirigirse a <a href="mailto:contacto@xx.com" > contacto@xx.com</a></p>
+        
+
+        </main>
+    </body>
+</html>
