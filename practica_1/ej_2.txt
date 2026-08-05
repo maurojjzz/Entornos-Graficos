@@ -1,0 +1,112 @@
+Ejercitación 2
+
+HTML está compuesto por un conjunto de elementos que son la base de su estructura. Los elementos
+están compuestos por dos tags (el de apertura y el de cierre) y el contenido
+en el medio (con excepción de los elementos vacíos ). Cada tag puede tener atributos
+(proporcionan ciertas características como altura, ancho, color, etc.) y eventos (asocian un script
+que se ejecuta cuando el evento ocurre).
+
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML
+se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos
+(nombre y valor), aclarando si es obligatorio.
+
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+
+    -Elmento: comentario html
+
+    - Se puede colocar en cualquier sector del documento ya que es un comentario que puede dar contexto de cualquier parte de la pagina.  
+    No provoca ningun cambio visual en la pagina mas que el de dejar un comentario en el codigo y no tiene ningun atributo.
+
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+    - Se coloca en el body del html y sirve para agrupar contenido y organizar la pagina.
+
+    - <div> es obligatorio cerrarlo </div>
+    - id="bloque1" : se usa para identificar de forma unica al bloque div
+
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+    - se coloca dentro del <body></body> y se utiliza para mostrar una imagen en la pagina
+
+    - <img>: inserta una imagen
+    - src : indica la ruta o url donde se encuentre alojada la imagen. Obligatorio.
+    - alt : texto que se muestra en caso que la ruta tenga un error y no carga. Opcional pero se recomienda utilizarlo
+    - id: se usa para identificar de forma unica al bloque que utilice la etiqueta. Opcional.
+    - name : nombre del elemento. Opcional.
+    - width: indica el ancho de la imagen. Opcional.
+    - height: indica el alto de la imagen. Opcional.
+    -longdesc: descripcion larga de la imagen. opcional.
+
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+    - Se coloca dentro de la etiqueta <head></head> y agrega metadatos a la pagina.
+
+    - <meta />: Agrega mas info a la pagina, es un elemento vacio no necesita que se cierre.
+    - name="keywords" : indica el tipo de metadato. Opcional
+    - lang='es': Indica el idioma del contenido del metadato. Opcional.
+    - content: Contiene el valor del metadato. Obligatorio cuando se usa name.
+    - http-equiv="expires" : es una directiva HTTP que indica la fecha de expiracion de la pagina. Opcional.
+
+
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">
+    Resumen HTML 
+</a>
+
+    -  Se coloca dentro de la etiqueta <body></body> y crea un enlace que permite acceder a otra página web.
+
+    - <a>: crea un link. Debe tener etiqueta de apertura y cierre.
+    href="http://www.e-style.com.ar/resumen.html": indica la dirección a la que apunta el enlace. Obligatorio.
+    type="text/html": indica el tipo de contenido del recurso. Opcional.
+    hreflang="es": indica el idioma del recurso al que apunta el enlace. Opcional.
+    charset="utf-8": indica la codificación del recurso enlazado. Opcional.
+    rel="help": indica la relación entre la página actual y el recurso enlazado, en este caso de ayuda. Opcional.
+
+
+
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1o</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2o</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+    -Se coloca dentro de la etiqueta <body></body> y sirve para mostrar información organizada en filas y columnas.
+
+    -<table></table>: crea la tabla. Debe abrirse y cerrarse.
+    - width="200": indica el ancho de la tabla. Opcional.
+    -summary="Datos correspondientes al ejercicio vencido": agrega una descripción de la tabla. Opcional.
+    -<caption></caption>: agrega el título de la tabla.
+    -align="top": indica que el título se muestra en la parte superior. Opcional.
+    -<tr></tr>: representa una fila de la tabla.
+    -<th></th>: representa una celda de encabezado.
+    -scope="col": indica que el encabezado corresponde a una columna. Opcional.
+    -scope="row": indica que el encabezado corresponde a una fila. Opcional.
+    -<td></td>: representa una celda de datos.
