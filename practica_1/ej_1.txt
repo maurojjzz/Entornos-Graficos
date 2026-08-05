@@ -1,0 +1,30 @@
+Ejercitación 1 - Responder el siguiente cuestionario
+
+
+LECTURAS SUGERIDAS
+Especificación HTML 4.01
+http://html.conclase.net/w3c/html401-es/cover.html
+Lista de tags HTML
+http://www.htmlquick.com/es/reference/tags.html
+
+
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+ - Es el lenguaje que se usar para crear la estructuras de sitios paginas webs. Se creo en 1991.  Las distintas versiones son HTML 1.0, HTML 2.0, HTML 3.2,
+    HTML 4.01, XHTML y HTML5 que es la version actual.
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos
+con HTML?
+    - Recomienda escribir un codigo bien estructurado usando las etiquetas segun el significado semantico dado, respestar los estandares dejando todo lo visual para CSS.
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y
+obsoleto?
+    - Sucede eso cuando el elemento aun se puede usar pero ya no se recomienda el uso ya que existe una solucion mas eficiente y se considera obsoleto cuando ya no forma parte del estandar de html
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+    - DTD define las reglas que va a seguir el documento y le define al navegador que version de html se esta usando .
+
+5. Qué son los metadatos y cómo se especifican en HTML?
+
+    - Informacion que no se muestra al usuario en la pagina en forma explicita. Se utiliza en la eetiqueta <head> usando la etiqueta <meta> en la cual por ejemplo se puede indicar el autor de la pagina.
