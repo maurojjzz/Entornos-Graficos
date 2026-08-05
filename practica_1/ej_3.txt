@@ -1,0 +1,191 @@
+Ejercitación 3
+
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+
+    - Abre el link a google en la misma pestaña donde estaba la pagina.
+
+
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+
+    - Abre el link a google en una nueva pestaña mientras que la pagina queda abierta.
+
+
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+
+    - Abre en la misma pagina pero agrega mas informacion como el idioma, la codificacion, etc.
+
+
+<a href="#">Click aquí para ir a Google</a>
+
+    - No redirige a ningun lado solamente se agregara un # a la url
+
+
+<a href="#arriba">Click aquí para volver arriba</a>
+
+    - en la misma pagina solamente que se movera a aquel contenido que tenga el id="arriba". 
+
+
+
+3.b)
+<p>
+    <img src="im1.jpg" alt="imagen1" />
+    <a href="http://www.google.com.ar">Click aquí</a>
+</p>
+
+    - Muestra una imagen que no tiene enlace y debajo un enlace que redirige a la pagina de Google
+
+
+<p>
+    <a href="http://www.google.com.ar">
+        <img src="im1.jpg" alt="imagen1" />
+    </a>
+    Click aquí
+</p>
+
+    - Muestra una imagen clickeable que redirigue a google y debajo un texto plano que no es un enlace.
+
+
+<p>
+    <a href="http://www.google.com.ar">
+        <img src="im1.jpg" alt="imagen1" />
+        Click aquí
+    </a>
+</p>
+
+    - Muestra una imagen y un texto que ambos estan enlazados a la pagina de google si se presionan
+
+<p>
+    <a href="http://www.google.com.ar">
+        <img src="im1.jpg" alt="imagen1" />
+    </a> 
+    <a href="http://www.google.com.ar">
+        Click aquí
+    </a>
+</p>
+
+    - Igual que el anterior solamente que ahora estan definido en dos enlaces distintos en lugar de usar el mismo.
+
+3.c)
+
+<ul>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ul>
+
+    - lista no ordenada que muestras 3 items.
+
+
+<ol>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ol>
+
+    - lista ordenada que muestra 3 items
+
+
+<ol>
+    <li>xxx</li>
+</ol>
+<ol>
+    <li value="2">yyy</li>
+</ol>
+<ol>
+    <li value="3">zzz</li>
+</ol>
+
+    - 3 listas ordenadas distintas pero el valor que tiene el item esta dado en la 2da y 3er lista.
+
+
+<blockquote>
+    <p>
+        1. xxx<br />
+        2. yyy<br />
+        3. zzz
+    </p>
+</blockquote>
+
+    - No es una lista si no un bloque de texto en donde la lista fue escrita manualmente pero no de forma correcta semanticamente hablando.
+
+
+3.d) 
+
+<table border="1" width="300">
+    <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+    <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+    </tr>
+</table>
+
+    - tabla de dos columnas tituladas Columna 1 y Columna 2 y dos filas que hacen en total 4 celdas.
+
+
+<table border="1" width="300">
+    <tr>
+        <td><div align="center"><strong>Columna1</strong></div></td>
+        <td><div align="center"><strong>Columna2</strong></div></td>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+    <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+    </tr>
+</table>
+
+    - misma tabla que la anterior solamente que la fila donde estan los titulos no es correctamente semantico porque no esta utilizando la etiqueta <th> que es la que le da el efecto que esta intentando darle.
+
+
+3.e)
+
+<table width="200">
+    <caption>
+        Título
+    </caption>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">
+        &nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+    - tabla que agrega un texo a la tabla de manera correcta utilizando <caption>
+
+<table width="200">
+    <tr>
+        <td colspan="3">
+            <div align="center">Título</div>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+    - El título está hecho con una fila (<tr>) y una celda (<td colspan="3">), por lo que visualmente se parece al anterior, pero semánticamente no es correcto porque ese texto pasa a formar parte de la tabla en lugar de ser su título. 
