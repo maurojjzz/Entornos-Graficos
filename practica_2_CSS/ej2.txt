@@ -1,0 +1,40 @@
+Ejercicio 2
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+p#normal {
+    font-family: arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+al parrafo que tenga el id normal, se le va a poner la fuente de letra Arial como primer opcion sino helvetica. Con una altura de 11 pixeles y negrita. 
+
+
+*#destacado {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+}
+
+a todo elemnto que tenga como id "destacado" se le va a aplicar un estilo de borde solido es decir sin cortes el trazado, de color azul y el espesor de  2 pixeles.
+
+
+#distinto {
+    background-color: #9EC7EB;
+    color: red;
+}
+
+a todo elemento que este se le va a poner un fondo de color asignado y la letra seran de color rojo.
+
+
+<p id="normal">Este es un párrafo</p>
+
+<p id="destacado">Este es otro párrafo</p>
+
+<table id="destacado">
+    <tr>
+        <td>Esta es una tabla</td>
+    </tr>
+</table>
+
+<p id="distinto">Este es el último párrafo</p>

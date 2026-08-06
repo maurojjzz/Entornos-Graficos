@@ -1,0 +1,34 @@
+Ejercicio 1: Responder
+
+
+1. ¿ Qué es CSS y para qué se usa?
+
+    - Lenguaje que se usa para dar estilo a una pagina web. Permite modificar colores, fuetnes, margenes, posiciones y la apariencia de los elementos html 
+
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+    - Utiliza un selector html que puede ser el elemento, una id o  una clase. Eso son los mas populares. A ese selector que es el que
+    indica el elemnto de html se le va a aplicar todas las propiedades y valores que el developer haya asignado.
+
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+    
+    - En un elemento html con el atributo style="", con la etiqueta <style> que va dentro del <head> o con un archivo externo .css que luego en el documento html se debe hacer mencion al css para que tome efecto.
+
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+    - selector de etiqueta por ejemplo <p> en css: p{}, selector por clase <div class='nombre'></div> .nombre{} o por id <div id='uno'> en css: #uno{} 
+
+Ejemplifique cada uno.
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+    - Es una clase que permite aplicar estilos segun el estado determinado que se encuentra tal elemento, ej: hover (mouse encima del elemento). focus (usuario presiono un input por ejemplo).
+
+6. ¿ Qué es la herencia?
+
+    - Mecanismo por el cual unos estilos de un elemento padre se transfieren a un elemento hijo automaticamente.
+
+7. ¿ En qué consiste el proceso denominado cascada?
+
+    - La cascada es el mecanismo que utiliza CSS para decidir qué estilo aplicar cuando un elemento tiene varias reglas. Se tienen en cuenta la prioridad, la especificidad de los selectores y el orden en que fueron escritas las reglas.
