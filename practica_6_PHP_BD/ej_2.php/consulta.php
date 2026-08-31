@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Listado completo </title>
+    </head>
+
+    <body>
+        <?php
+            $link = mysqli_connect("127.0.0.1", "capitales", "Capitales@123", "Capitales");
+
+            if (!$link) {
+                die("Error de conexión: " . mysqli_connect_error());
+            }
+
+            $vSql = "SELECT * FROM Ciudades";
+            $vResultado = mysqli_query($link, $vSql);
+            $total_registros=mysqli_num_rows($vResultado);
+        ?>
+        <table border=1>
+            <tr>
+                <td><b>id</b></td>
+                <td><b>ciudad</b></td>
+                <td><b>pais</b></td>
+                <td><b>habitantes</b></td>
+                <td><b>superficie</b></td>
+                <td><b>tieneMetro</b></td>
+            </tr>
+            <?php
+            while ($fila = mysqli_fetch_array($vResultado)){
+            ?>
+            <tr>
+                <td><?php echo ($fila['id']); ?></td>
+                <td><?php echo ($fila['ciudad']); ?></td>
+                <td><?php echo ($fila['pais']); ?></td>
+                <td><?php echo ($fila['habitantes']); ?></td>
+                <td><?php echo ($fila['superficie']); ?></td>
+                <td><?php echo ($fila['tieneMetro']); ?></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+            <?php
+            }
+                // Liberar conjunto de resultados
+                mysqli_free_result($vResultado);
+                // Cerrar la conexion
+                mysqli_close($link);
+            ?>
+                </td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+        <p align="center"><a href="menu.html">Volver al menu; del ABM</a></p>
+    </body>
+</html>

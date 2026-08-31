@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Formulario Alta Ciudades</title>
+    </head>
+    <body>
+        <form action="Alta.php" method="POST" name="FormAlta">
+            <table width="225">
+                <tr>
+                    <td>Nombre Ciudad:</td>
+                    <td><input type="TEXT" name="Nom"  maxlength="40" /></td>
+                </tr>
+
+                <tr>
+                    <td>Pais:</td>
+                    <td><input type="TEXT" name="Pais"  maxlength="40" /></td>
+                </tr>
+
+                <tr>
+                    <td>Habitantes:</td>
+                    <td><input type="number" name="Habitantes"   /></td>
+                </tr>
+                <tr>
+                    <td>Superficie:</td>
+                    <td><input type="number" step="0.01" name="Superficie"  /></td>
+                </tr>
+                <tr>
+                    <td>Tiene Metro:</td>
+                    <td><input type="checkbox" name="TieneMetro"  /></td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <p align="center">
+                <input type="submit" name="Submit" value="Enviar" />
+                <input type="reset" name="Submit2" value="Borrar" />
+            </p>
+        </form>
+    </body>
+</html>
